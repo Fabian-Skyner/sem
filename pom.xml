@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+         xmlns="http://maven.apache.org/POM/4.0.0">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.napier.sem</groupId>
@@ -22,7 +22,7 @@
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
 
-    // Defines how Maven assembles the JAR file.
+    <!--Defines how Maven assembles the JAR file.-->
     <build>
         <plugins>
             <plugin>
@@ -32,12 +32,12 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            // run the given class (in this case, our app) when the JAR is executed
+                            <!--run the given class (in this case, our app) when the JAR is executed-->
                             <mainClass>com.napier.sem.App</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
-                        // building jar-with-dependencies here tells Maven to pull in the MongoDB code
+                        <!--building jar-with-dependencies here tells Maven to pull in the MongoDB code-->
                         <descriptorRef>jar-with-dependencies</descriptorRef>
                     </descriptorRefs>
                 </configuration>
