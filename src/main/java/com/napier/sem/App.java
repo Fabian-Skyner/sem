@@ -5,7 +5,7 @@ import com.mongodb.client.MongoDatabase;
 import com.mongodb.client.MongoCollection;
 import org.bson.Document;
 
-@SuppressWarnings("ALL")
+@SuppressWarnings("ALL") // stops intellij and github from yelling at me
 public class App
 {
     public static void main(String[] args)
